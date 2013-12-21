@@ -1,0 +1,47 @@
+<form method="post" id="loginForm" class="login-form" action="http://www.renren.com/PLogin.do">
+<dl class="top clearfix">
+<dt><label for="email">帐号:</label></dt>
+<dd style="border-color: rgb(173, 182, 201);">
+<span id="errorMessage" class="errors_div" style="display:none;"></span>
+<input type="text" name="email" class="input-text" id="email" tabindex="1" value="" style="color: rgb(136, 136, 136); background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDiIBl+zfqgAAAdJJREFUOMvNkj9oU2EUxX/3e4+X2AYtgoIotAUVlZSiVQKCOFgwQ50cKhUcg4qbEITwvfyTjEKnCqUgbqJooQgFRXAROoiiKFWHOsdiSw0UXvK4DkloGl+wOHm2c7ice++5F/47ZLPZQ9baM21urU1Za0d61ZtOYq29FY/Hl0VkDhBARGRGRN75vl+JMnC7eCAi/cCItXZSVRsichJAVb9FGUg3933/tYicA76qaigix4FXxWLxQk+DXC43aIzZXa/XN13XHTLGLIqI0+ocApdVtSoiiUaj8aNSqbzftoLruneA67FY7M8OTaN5keawruvOApnuEM2/Xk1a6Y+p6j5VXReR/Y7jPANMu+tfDTqRz+dfAOOq+tEY07q/x1j6EqeG9rLx/QPPF5eo9fiDK8B4i5bb+pGJDBOpJH3EOJZKk5kcjX4k4CjQUNVPpVLpSVNKMHjAY315nun7D1gJoS8WjzYol8ulIAhGwzC8CWhTrfFy9h7Tj1yy+dsMO7BarfbOoBOFQkHB40TqLLt+fubL6h4uXp0iObDCzN2HVCNeOQL9nE6fZzg4yMbcG3Caan3n91/j6eMlfnmHmbpxjeTAJm8XFljb+Qpb8BIeQS3YVvMbj7WWjTVB6I8AAAAASUVORK5CYII=); padding-right: 0px; background-attachment: scroll; cursor: auto; background-position: 100% 50%; background-repeat: no-repeat no-repeat;" autocomplete="off" keyev="true" clickev="true">
+</dd>
+</dl>
+<dl class="pwd clearfix">
+<dt><label for="password">密码:</label></dt>
+<dd>
+<input type="password" id="password" name="password" error="请输入密码" class="input-text" tabindex="2" autocomplete="off" keyev="true" clickev="true" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDiIBl+zfqgAAAdJJREFUOMvNkj9oU2EUxX/3e4+X2AYtgoIotAUVlZSiVQKCOFgwQ50cKhUcg4qbEITwvfyTjEKnCqUgbqJooQgFRXAROoiiKFWHOsdiSw0UXvK4DkloGl+wOHm2c7ice++5F/47ZLPZQ9baM21urU1Za0d61ZtOYq29FY/Hl0VkDhBARGRGRN75vl+JMnC7eCAi/cCItXZSVRsichJAVb9FGUg3933/tYicA76qaigix4FXxWLxQk+DXC43aIzZXa/XN13XHTLGLIqI0+ocApdVtSoiiUaj8aNSqbzftoLruneA67FY7M8OTaN5keawruvOApnuEM2/Xk1a6Y+p6j5VXReR/Y7jPANMu+tfDTqRz+dfAOOq+tEY07q/x1j6EqeG9rLx/QPPF5eo9fiDK8B4i5bb+pGJDBOpJH3EOJZKk5kcjX4k4CjQUNVPpVLpSVNKMHjAY315nun7D1gJoS8WjzYol8ulIAhGwzC8CWhTrfFy9h7Tj1yy+dsMO7BarfbOoBOFQkHB40TqLLt+fubL6h4uXp0iObDCzN2HVCNeOQL9nE6fZzg4yMbcG3Caan3n91/j6eMlfnmHmbpxjeTAJm8XFljb+Qpb8BIeQS3YVvMbj7WWjTVB6I8AAAAASUVORK5CYII=); padding-right: 0px; background-attachment: scroll; cursor: auto; background-position: 100% 50%; background-repeat: no-repeat no-repeat;">
+<label class="pwdtip" id="pwdTip" for="password">请输入密码</label>
+<a class="forgetPwd" id="forgetPwd" href="http://safe.renren.com/findPass.do" stats="home_findpassword">忘记密码？</a>
+</dd>
+</dl>
+<div class="caps-lock-tips" id="capsLockMessage" style="display:none"></div>
+<dl class="savepassword clearfix">
+<dt>
+<label title="为了确保您的信息安全，请不要在网吧或者公共机房勾选此项！" for="autoLogin" class="labelCheckbox">
+<input type="checkbox" name="autoLogin" id="autoLogin" value="true" tabindex="4">下次自动登录
+</label>
+</dt>
+<dd>
+<span class="getpassword" id="getpassword"><a href="http://safe.renren.com/findPass.do" stats="home_findpassword">忘记密码？</a></span>
+</dd>
+</dl>
+<dl id="codeimg" class="codeimg clearfix">
+<dt></dt>
+<dd><img id="verifyPic_login" src="http://icode.renren.com/getcode.do?t=web_login&amp;rnd=Math.random()"><a href="javascript:refreshCode_login();">换一张</a>
+</dd>
+</dl>
+<dl id="code" class="code clearfix">
+<dt><label for="code">验证码:</label></dt>
+<dd>
+<input id="icode" type="text" name="icode" class="input-text" tabindex="3" autocomplete="off" keyev="true" clickev="true" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDiIBl+zfqgAAAdJJREFUOMvNkj9oU2EUxX/3e4+X2AYtgoIotAUVlZSiVQKCOFgwQ50cKhUcg4qbEITwvfyTjEKnCqUgbqJooQgFRXAROoiiKFWHOsdiSw0UXvK4DkloGl+wOHm2c7ice++5F/47ZLPZQ9baM21urU1Za0d61ZtOYq29FY/Hl0VkDhBARGRGRN75vl+JMnC7eCAi/cCItXZSVRsichJAVb9FGUg3933/tYicA76qaigix4FXxWLxQk+DXC43aIzZXa/XN13XHTLGLIqI0+ocApdVtSoiiUaj8aNSqbzftoLruneA67FY7M8OTaN5keawruvOApnuEM2/Xk1a6Y+p6j5VXReR/Y7jPANMu+tfDTqRz+dfAOOq+tEY07q/x1j6EqeG9rLx/QPPF5eo9fiDK8B4i5bb+pGJDBOpJH3EOJZKk5kcjX4k4CjQUNVPpVLpSVNKMHjAY315nun7D1gJoS8WjzYol8ulIAhGwzC8CWhTrfFy9h7Tj1yy+dsMO7BarfbOoBOFQkHB40TqLLt+fubL6h4uXp0iObDCzN2HVCNeOQL9nE6fZzg4yMbcG3Caan3n91/j6eMlfnmHmbpxjeTAJm8XFljb+Qpb8BIeQS3YVvMbj7WWjTVB6I8AAAAASUVORK5CYII=); padding-right: 0px; background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat no-repeat;">
+<label class="codetip" id="codeTip" for="icode">请输入验证码</label>
+</dd>
+</dl>
+<dl class="bottom">
+<input type="hidden" name="origURL" value="http://www.renren.com/home">
+<input type="hidden" name="domain" value="renren.com">
+<input type="hidden" name="key_id" value="1">
+<input type="hidden" name="captcha_type" id="captcha_type" value="web_login">
+<input type="submit" id="login" class="input-submit login-btn" stats="loginPage_login_button" value="登录人人网" tabindex="5">
+</dl>
+</form>

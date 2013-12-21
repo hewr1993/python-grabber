@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" /><meta name="Description" content="人人网 校内是一个真实的社交网络，联络你和你周围的朋友。 加入人人网校内你可以:联络朋友，了解他们的最新动态；和朋友分享相片、音乐和电影；找到老同学，结识新朋友；用照片和日志记录生活,展示自我。" />
+<meta name="Keywords" content="Xiaonei,Renren,校内,大学,同学,同事,白领,个人主页,博客,相册,群组,社区,交友,聊天,音乐,视频,校园,人人,人人网" /><title>人人网 - 清经会
+(清华大学)</title><link rel="shortcut icon" type="image/x-icon" href="http://a.xnimg.cn/favicon-rr.ico?ver=3" />
+<link rel="apple-touch-icon" href="http://a.xnimg.cn/wap/apple_icon_.png" />
+<link href="http://s.xnimg.cn/a61071/n/core/global2-all-min.css" rel="stylesheet" /><script>XN = {get_check:'345146877',get_check_x:'e0538457',env:{domain:'renren.com',shortSiteName:'人人',siteName:'人人网'}};
+photoSeedSrc= 'http://s.xnimg.cn/a62775/n/apps/photo/photoSeed.js';
+</script>
+<script src="http://s.xnimg.cn/a62954/n/core/base-all2.js"></script><script>
+if (window.asyncHTMLManager) {
+window.asyncHTMLManager.addEvent('load', function() {
+load_jebe_ads(1, false, true);
+});
+} else {
+load_jebe_ads(1);
+}XN.getFileVersion([
+'http://s.xnimg.cn/a19816/csspro/apps/profile.css',
+'http://s.xnimg.cn/a54265/csspro/module/friendSelector.css',
+'http://s.xnimg.cn/a16298/csspro/module/status-pop.css',
+'http://s.xnimg.cn/a58689/csspro/module/school-selector.css',
+'http://s.xnimg.cn/a20254/csspro/module/minieditor.css',
+'http://s.xnimg.cn/a20457/jspro/xn.app.recommendFriend.js',
+'http://s.xnimg.cn/a60104/jspro/xn.app.status.js',
+'http://s.xnimg.cn/a61468/jspro/xn.app.share.js',
+'http://s.xnimg.cn/a63042/jspro/xn.app.ilike.js',
+'http://s.xnimg.cn/a58863/jspro/xn.ui.pager.js',
+'http://s.xnimg.cn/a32035/jspro/xn.ui.multiFriendSelectorBox.js',
+'http://s.xnimg.cn/a57199/jspro/xn.app.friend.group.js',
+'http://s.xnimg.cn/a59856/jspro/xn.app.addFriend.js',
+'http://s.xnimg.cn/a5881/jspro/xn.ui.multiFriendSelectorBox.forGuide.js',
+'http://s.xnimg.cn/a61820/jspro/lib/mediaplayer.js',
+'http://s.xnimg.cn/a58599/jspro/xn.ui.schoolSelectors.js',
+'http://s.xnimg.cn/a13200/jspro/album/ZeroClipboard.js',
+'http://s.xnimg.cn/a45224/jspro/xn.ui.emoticons.js',
+'http://s.xnimg.cn/a30963/n/apps/home/modules/drag-upload/drag-upload.js',
+'http://a.xnimg.cn/swf/album/ZeroClipboard.swf?ver=$revxxx$',
+'http://a.xnimg.cn/n/core/modules/flashUploader/flashUploader.js',
+'http://s.xnimg.cn/a33832/n/core/modules/flashUploader/upload-pop-all-min.css',
+'http://s.xnimg.cn/a52793/apps/wiki/css/wiki-card-all-min.css',
+'http://s.xnimg.cn/a57926/apps/wiki/js/wiki_model.js',
+'http://s.xnimg.cn/a52502/apps/wiki/js/wikicard-load.js',
+'http://s.xnimg.cn/a58350/n/core/feed/video/video-show.js'
+]);
+XN.namespace( 'user' );
+XN.$extend(XN.user, {
+'id':'601536829',
+'ruid':'501277626',
+'tinyPic':'http://hdn.xnimg.cn/photos/hdn221/20130521/2245/h_tiny_ipc8_a7d6000002a2111a.jpg',
+'name':"Thucst23",
+'pageVersion':6
+});
+XN.event.addEvent(window, 'load', function(){
+var r = parseInt(Math.random()*150);
+if (r == 5 && window.UGC) UGC.Network.ping.performance.start("100000","sns.home.performance");
+});XN.user.isVip = false;XN.user.hideAds = false;object.predefine('xn/namecard', 'http://s.xnimg.cn/a63148/modules/namecard/js/namecard.js');
+object.predefine('xn/showShareFriend', 'http://s.xnimg.cn/a54260/n/core/modules/show-share-friend/showShareFriendsModule.js');
+object.predefine('xn/mentionMain', 'http://s.xnimg.cn/a58440/n/core/modules/mention/index.js');
+object.predefine('xn/site-nav/switch-account', 'http://s.xnimg.cn/a41752/n/core/modules/site-nav/switch-account.js');
+object.predefine('xn/site-nav/drop-menu-profile xn/site-nav/drop-menu-app', 'http://s.xnimg.cn/a58640/n/core/modules/site-nav/drop-menu.js');
+object.predefine('xn/site-nav/search', 'http://s.xnimg.cn/a55318/n/core/modules/site-nav/search.js');
+object.predefine('xn/ilike', 'http://s.xnimg.cn/a58281/n/core/modules/ilike/index.js');
+object.predefine('xn/group/vote', 'http://s.xnimg.cn/a49736/n/core/feed/group/group-vote.js');
+object.predefine('xn/lib/switch', 'http://s.xnimg.cn/a54374/n/core/lib/switch.js');
+object.predefine('xn/lib/scrollFix', 'http://s.xnimg.cn/a61394/n/core/lib/scrollFix.js');
+object.predefine('xnapp/birthday', 'http://s.xnimg.cn/a59454/apps/home/compatible/birthday.js');
+object.predefine('xn/apps/toolsBox', 'http://s.xnimg.cn/a53568/jspro/modules/tools-box/tools-box.js');
+object.predefine('xn/feed/videoShow','http://s.xnimg.cn/a58350/n/core/feed/video/video-show.js');
+</script>
+<script type="text/javascript">
+window.IS_PRIVACY_ON=true;
+</script><link rel="stylesheet" type="text/css" href="http://s.xnimg.cn/a60003/apps/profile2/profile-all-min.css" />
+<link rel="stylesheet" type="text/css" href="http://s.xnimg.cn/a62931/modules/global-publisher/products/profile/publisher-all-min.css" /><script type="text/javascript" data-src="http://s.xnimg.cn/a58281/n/core/modules/ilike/index.js" data-module="xn/ilike"></script>
+<script type="text/javascript">
+var CoverInfo = {
+uid: '559111297',
+profileid: '601536829',
+coverScale: '0.32248062015503876',
+coverAddress: 'http://fmn.rrimg.com/fmn060/20131007/2220/original_zJSM_64a2000029231260.jpg',
+albumid: '931714956',
+photoid: '7479771155',
+uploadCoverMd5String: '14c7d5f55b03c0f08eaabf19dd67815a'
+};
+var profileOwnerId = '559111297';
+var	profileOwnerName = '清经会';
+var uid = '601536829';
+var uname = 'Thucst23';
+var highlightIds = [];
+var highlightNums = [];
+var tlNavData = '[{"year":2013,"month":[12,11,10,9]}]';
+var birthYear = '2013';
+var birthMonth = '8';
+var birthDay = '21';
+var profileNowYear = '2013';
+var profileNowMonth = '12';
+var profileNowDay = '9';
+if(XN) XN.pageId = 'profile';  // 照片弹層
+var isInWhiteList = false; // 是否在百名单内
+var isStar = 1; //是否是星级用户
+var isLEguide = 1; //是否走lifeevent的引导
+var superAdmin = false; //超级管理员
+var friend_type = '4'; //好友状态
+var lastdayGuide = false; //末日引导下线
+var isUseSkin = false;
+var isShowNotSupportIE6Button   = 'true';</script>
+<script type="text/javascript" src="http://s.xnimg.cn/a53261/jspro/xn.app.gossip.js"></script>
+<script type="text/javascript" src="http://s.xnimg.cn/a53030/jspro/xn.ui.minieditor.js"></script>
+<script src="http://s.xnimg.cn/a63380/apps/profile2/combine/profile-all-min.js"></script>
+<script type="text/javascript" src="http://s.xnimg.cn/a60989/n/apps/photo/modules/flashUploaderAndSend/friendSelector.js"></script>
+<script data-src="http://s.xnimg.cn/a50466/apps/profile2/module/lifeevent/tplCreate.js" data-module="xn/profile/tplcreate"></script>
+<script data-src="http://s.xnimg.cn/a49432/apps/profile2/module/lifeevent/tplEdit.js" data-module="xn/profile/tpledit"></script>		
+<script type="text/javascript">
+XN.getFileVersion([
+'http://s.xnimg.cn/a56762/n/apps/vip/profile/adornment.js',
+'http://s.xnimg.cn/a50445/n/apps/vip/profile/other.js',
+'http://s.xnimg.cn/a50445/n/apps/vip/profile/skin.js',
+'http://s.xnimg.cn/a50445/n/apps/vip/profile/player.js',
+'http://s.xnimg.cn/a50445/n/apps/vip/profile/custom.js',
+'http://s.xnimg.cn/a56762/n/apps/vip/profile/css/adorn-all-min.css',
+'http://s.xnimg.cn/a49442/n/apps/vip/profile/css/other-all-min.css',
+'http://s.xnimg.cn/a49368/n/apps/vip/profile/css/custom-all-min.css',
+'http://s.xnimg.cn/a44484/n/apps/vip/adorn/flashWithAS3.js',
+'http://s.xnimg.cn/a49370/n/apps/vip/adorn/musicplayerv8.js',
+'http://s.xnimg.cn/a48634/n/apps/vip/adorn/cartoon.v5.js',
+'http://s.xnimg.cn/a48634/n/apps/vip/adorn/xnapp.vip.piao.js'
+])
+</script><link rel="stylesheet" type="text/css" href="http://s.xnimg.cn/a58377/jspro/privacy/style/index-all-min.css" media="all" />
+<script type="text/javascript">
+object.predefine('friendsSelector', 'http://s.xnimg.cn/a60669/jspro/xn.app.friendsSelector.js');
+object.predefine('privacy', 'http://s.xnimg.cn/a58377/jspro/xn.app.privacy.js');window.IS_PRIVACY_ON = true;</script>
+<script src="http://s.xnimg.cn/a57619/jspro/xn.app.privacy.seed.js"></script></head>
+<body>	
+<div id="showNewNav" style="display:none"></div>
+<div id="dropmenuHolder" class="dropmenu-holder dropmenu-holder-new rr">
+<div id="accountDropDownMenu" class="menu-dropdown" style="display: none">
+<div class="menu-dropdown-border">
+<div class="account-menu">
+<div class="accounts" id="otherAccount" style="display:none"></div><div class="optionsupport"><a href="http://help.renren.com/helpcenter">联系客服</a></div>
+<a accesskey="0" href="http://www.renren.com/Logout.do?requesttoken=345146877" class="logout">退出</a>
+</div>
+</div>
+</div>
+<div id="appsMenuPro" class="menu-dropdown" style="position: absolute; display: block; z-index: 10001; left: -9999px; top: -9999px; "></div></div>
+<div class="site-nav-wrapper">
+<div id="navBar" class="site-nav fixed">
+<div id="navigation-for-buddylist">
+<div class="navigation-wrapper">
+<div class="navigation navigation-new clearfix"><div id="logo2"><h1><a href="http://www.renren.com" title="人人网 renren.com - 人人网校内是一个真实的社交网络，联系朋友，一起玩游戏"><img alt="人人网 renren.com - 人人网校内是一个真实的社交网络，联系朋友，一起玩游戏" title="人人网 renren.com - 人人网校内是一个真实的社交网络，联系朋友，一起玩游戏" height="31" width="160" src="http://s.xnimg.cn/imgpro/v6/logo.png?f=trunk" /></a></h1></div><div class="nav-body clearfix">
+<div class="nav-main"><div class="menu">
+<div class="menu-title">
+<a accesskey="1" href="http://www.renren.com/home?id=601536829"><span class="menu-title-text" stats="V6Hd_home">首页</span></a></div>
+</div><div class="menu">
+<div id="profileMenuActive" class="menu-title"><a id="showProfileMenu" accesskey="2" href="http://www.renren.com/profile.do?id=601536829"><span stats="V6Hd_Profile" class="menu-title-text">公共主页</span><span class="nav-drop-menu-btn"></span></a></div>
+</div>																		 </div><div class="nav-other">
+<div id="navMessage">
+<span class="remind" title = "提醒">
+<a href="#nogo" onclick="return false;" hidefocus="true">&nbsp;</a>
+</span>
+<span class="apply" title = "朋友">
+<a href="#nogo" onclick="return false;" hidefocus="true">&nbsp;</a>
+</span>
+<span class="notice" title = "通知">
+<a href="#nogo" onclick="return false;" hidefocus="true">&nbsp;</a>
+</span></div>
+<div id="navSearch_new" class="navSearch">
+<input stats="Hd_sInput" type="text" maxlength="100" id="navSearchInput" class="navSearchInput" accesskey="/" name="q" class="input-text" defaultVal="找人、视频、日志、照片" value="找人、视频、日志、照片" tabindex="1" autocomplete="off"/>
+<a href="javascript:;" id="searchBtnAC" class="searchBtnAC">搜索</a>
+</div><div class="menu account-action" id="accountMenu">
+<div class="menu-title"><a href="#" onclick="return false;">帐号</a></div>
+</div></div>
+</div>
+</div>
+<div class="nav-drop-menu-holder" id="navDropMenuHolder"><div class="nav-drop-menu nav-drop-menu-profile" id="navProfileDropMenu">
+<a href="http://page.renren.com/601536829/admin/" class="nav-drop-menu-item"><img src="http://a.xnimg.cn/imgpro/icons/application_2.gif" class="icon" /> 管理后台</a><a class="nav-drop-menu-item" href="http://page.renren.com/mng/entry?pid=601536829&amp;biztype=index"><img src="http://a.xnimg.cn/imgpro/icons/Vipdraw.gif" class="icon" /> 装扮主页</a>
+<a class="nav-drop-menu-item" href="http://page.renren.com/601536829/info"><img src="http://a.xnimg.cn/imgpro/icons/account.gif" class="icon" /> 修改资料</a></div></div>
+</div>
+</div>
+</div>
+</div><div id="container-for-buddylist"><div id="container">	
+<div id="zidou_music"></div>
+<div id="profile_wrapper">	
+<script type="text/javascript">
+function openMyTimeline() {
+var dialog = XN.DO.confirm({
+title : "使用新版个人主页",
+message : '<div class="bt-timeline-pop">为你开启属于自己的时间轴！</div>',
+width : '480',
+params : {
+showCloseButton : true
+},
+callback: function(r){
+if (r) {
+new XN.NET.xmlhttp({
+url: 'http://www.renren.com/lifeEventGuideStatus/newTimelineSwitch',
+data: 'flag=openTimeline',
+method: 'post',
+onSuccess: function(xmlHttp){
+var r = XN.JSON.parse(xmlHttp.responseText);
+if(r.code == '0'){
+window.location.href='http://www.renren.com/'+ XN.user.id +'/profile';
+}else if(r.code == '-1'){
+XN.DO.showError(r.msg);
+}
+},
+onError: function(){
+XN.DO.showError('服务器错误，请稍后重试');
+return;
+}
+});
+}
+}
+});
+}
+</script>
+<style type="text/css" title="">
+.open-my-timeline{
+display:block;
+margin-bottom:20px;
+position:fixed;
+top:43px;
+width:100px;
+height:28px;
+background:url('http://a.xnimg.cn/apps/profile2/res/open-tl2.png') 0 0 no-repeat;
+_position:absolute;
+_top:expression(eval(document.documentElement.scrollTop + 13));
+_right:15px;
+}
+.open-my-timeline:hover{
+width:100px;
+height:28px;
+background:url('http://a.xnimg.cn/apps/profile2/res/open-tl2.png') 0 -28px no-repeat;
+}
+/** popup **/
+.bt-normal-pop,
+.bt-timeline-pop{
+background:url(http://a.xnimg.cn/apps/profile2/res/guide/goto-old-img.png) 15px 20px no-repeat;
+padding:60px 20px 80px 160px;
+font-size:14px;
+}
+.bt-timeline-pop{
+background:url(http://a.xnimg.cn/apps/profile2/res/guide/open-tm-img.png) 15px 20px no-repeat;
+}
+</style>
+<div class="top-attach clearfix" id="top-attach">
+<figure><a href="http://www.renren.com/559111297/profile"><img src="http://hdn.xnimg.cn/photos/hdn421/20131209/1040/h_tiny_DswC_17410000d1cb111a.jpg" /></a></figure>
+<ul class="clearfix">
+<li class="first"><a href="http://www.renren.com/559111297/profile">清经会</a>
+</li>
+<li>
+<a href="javascript:;">时间轴</a>
+<div>
+<p class="current"><a href="http://www.renren.com/559111297/profile">时间轴</a></p>
+<p><a href="http://www.renren.com/lifeevent/index/559111297">生活纪事</a></p>
+<p><a href="http://www.renren.com/559111297/profile?v=info_timeline">资料</a></p>
+<p><a href="http://photo.renren.com/photo/559111297/album/relatives/profile">相册</a></p>
+<p><a href="http://photo.renren.com/photo/zuji/559111297">足迹</a></p>
+<p><a href="http://wiki.renren.com/movie/559111297">电影</a></p>
+<p><a href="http://share.renren.com/share/timeline/559111297">分享</a></p><p><a href="http://blog.renren.com/blog/601536829/blogs/559111297">日志</a></p></div>
+</li>
+<li class="last">
+<a href="javascript:;">现在</a>
+</li>
+</ul></div><div id="timeline_wrapper"><div id="cover">
+<div class="avatar">
+<div class="figure_con"><figure id="uploadPic"><a href="http://photo.renren.com/getalbumprofile.do?owner=559111297" target="_blank"><img src="http://hdn.xnimg.cn/photos/hdn421/20131209/1040/h_large_jkDw_17410000d1cb111a.jpg" width="177" onload="cutPhotoImg(this, 177);" id="userpic" /></a></figure></div></div>
+</div>
+<div></div><div id="operate_area" class="clearfix">
+<h1 class="avatar_title">清经会<span>(2382人看过)<a class="user-type" title="未绑定手机" href="http://mobile.renren.com/bind?psf=42004">
+<img alt="未绑定手机" class="iPhoneno" src="http://a.xnimg.cn/a.gif" />
+</a></span>
+</h1>
+<div id="func_area" class="clearfix">
+<section>
+<button class="func_button button_save" id="save_action">保存</button>
+<button class="func_button button_cancel" id="cancel_action">取消</button>
+</section>
+</div>
+<div class="friend-area clearfix"><a id="sendAgain" class="sended" onclick="showRequestFriendDialog('559111297','清经会','http://hdn.xnimg.cn/photos/hdn421/20131209/1040/h_tiny_DswC_17410000d1cb111a.jpg',false,'','');return false;" href="javascript:;"><span>好友请求已经发送</span></a>
+<a class="send-message" onclick="talkto(559111297)" title="聊天" href="javascript:;"></a>
+<a class="gift" href="http://gift.renren.com/send.do?fid=559111297" title="送礼物"></a><a id="settingMenu" class="setting" href="javascript:;" title="设置"></a><div id="settingList">
+<ul class="clearfix">
+<li><a class="hi" href="http://www.renren.com/Poke.do?id=559111297" onclick="doPoke(event,'559111297','');return false;">打招呼</a></li>
+<li><a class="report" href="http://support.renren.com/report/common?type=1&contentId=559111297&origURL=/profile.do?id=559111297">举报用户</a></li>
+<li><a id="addBlock" href="javascript:;" class="block">加入黑名单</a></li></ul>
+</div></div></div>
+<div id="highlight-area" class="clearfix">
+<div class="profile-information">
+<ul class="information-ul" id="information-ul" onclick="window.location.href='http://www.renren.com/559111297/profile?v=info_timeline'">
+<li class="school"><span>就读于清华大学</span></li>
+<li class="birthday">
+<span>男生</span><span>，8月21日</span>	</li>
+<li class="hometown">来自北京海淀区</li>
+<li class="address">现居北京</li></ul>
+<div class="info-bottom clearfix">
+<a class="editinfo" href="http://www.renren.com/559111297/profile?v=info_timeline">查看资料</a>
+<a class="status" href="http://status.renren.com/status/559111297" target="_blank">所有状态</a>
+</div>
+</div><ul id="highlight-detail" class="clearfix"><li class="hl-album hl-detail" data-id="2"><a href="http://photo.renren.com/photo/559111297/album/relatives/profile" class="one" target="_blank"><img src="http://hdn.xnimg.cn/photos/hdn421/20131209/1040/h_main_ChQj_17410000d1cb111a.jpg" /></a><span class="bg_icon"></span>
+<h1><span><a href="http://photo.renren.com/photo/559111297/album/relatives/profile" target="_blank">照片</a>(882)</span></h1>
+</li>
+<li class="hl-movie hl-movie-default hl-detail" data-id="12"><a href="http://wiki.renren.com/movie/559111297" class="one" target="_blank">
+<img src="http://xnimg.cn/apps/profile2/res/highlight/default-movie-new.png" />
+</a><span class="bg_icon"></span>
+<h1><span><a href="http://wiki.renren.com/movie/559111297" target="_blank">电影</a>(0)</span></h1>
+</li><li data-id="8" class="hl-footprint hl-detail">
+<a href="http://photo.renren.com/photo/zuji/559111297" target="_blank" class="one"><img src="http://a.xnimg.cn/apps/profile2/res/highlight/default-footprint-new.png" /></a>
+<span class="bg_icon"></span>
+<h1><span><a href="http://photo.renren.com/photo/zuji/559111297" target="_blank">足迹</a>(0)</span></h1></li></ul>
+<ul id="highlight-item" class="clearfix">
+<li data-id="3" class="hl-item">
+<h1 class="hl-share"><a href="http://share.renren.com/share/timeline/559111297" target="_blank">分享</a></h1>
+<span>87</span>
+</li>
+<li data-id="4" class="hl-item">
+<h1 class="hl-page"><a href="http://page.renren.com/home/friendspages/view?uid=559111297" target="_blank">公共主页</a></h1>
+<span>11</span>
+</li>
+<li data-id="5" class="hl-item">
+<h1 class="hl-app"><a href="javascript:;" >应用</a></h1>
+<span>2</span>
+</li>
+<li data-id="6" class="hl-item">
+<h1 class="hl-gift"><a href="http://gift.renren.com/show/box/otherbox?userId=559111297" target="_blank">礼物</a></h1>
+<span>0</span>
+</li>
+<li data-id="7" class="hl-item">
+<h1 class="hl-music"><a href="javascript:;" >音乐</a></h1>
+<span>0</span>
+</li>
+<li data-id="9" class="hl-item">
+<h1 class="hl-blog"><a href="http://blog.renren.com/blog/601536829/blogs/559111297" target="_blank">日志</a></h1>
+<span>10</span>
+</li>	
+<li class="add-hl">+<ol></ol></li>	
+</ul>
+<div class="hl-bottom-bar clearfix" id="hl-bottom-bar">
+<input type="button" class="input-submit gray" value="取消" />
+<input type="button" class="input-submit" value="确定" />
+</div>
+<div class="hl-see-more"><a href="javascript:;"></a></div></div>
+<div id="timeline" class="clearfix"><div class="tl-left-module"><div class="gossip-box">
+<div id="comfirm_diag" class="generic_dialog wallpro_dialog pop_dialog"></div>
+<input type="hidden" id="proTabFeedId_" value=""/>
+<input type="hidden" id="proTabInfoId_" value=""/>
+<input type="hidden" id="gossipForTL" value=""/>
+<div class="box-holder talk-box">
+<script>
+$extend( XN.user, {
+colorfulGossip :　true,
+jf_vip_em : false,
+isAdmin : false,
+user_at_profile : true
+});
+</script>
+<div class="box" id="gossipBoard" stats="n2_gossipboard">
+<div class="box-body"><div class="m-editor" id="miniEditor">
+<form id="commentPostForm">
+<div class="m-editor-textarea">
+<textarea id="cmtbody" tabindex="2" name="body" rows="4" cols="60" ></textarea><script type="text/javascript">
+XN.dom.ready(function(){
+XN.form.help( 'cmtbody' ).setDefaultValue( '有多久没给清经会留言了？'.replace(/\&amp;/g,'&') );
+});
+</script>
+</div>        
+<div class="m-editor-emo-holder" id="miniEditorEmoHolder" style="display:none">
+<div class="emo-header" id="miniEditorEmoTabHolder" style="display:none">
+<ul class="emo-tab" id="miniEditorEmoTab"></ul>
+</div>            
+<div class="emo-holder" id="miniEditorEmoList"></div>
+<div class="notVip-tip clearfix" id="notVipTip" style="display:none;"> 
+<div class="emotion-icon">
+<img src="http://a.xnimg.cn/imgpro/icons/grade/cjbq.png" />
+<p>超级表情</p>
+</div>
+<p>对不起，该功能需要<span class="red">等级9级以上</span>或<span class="red">开通VIP</span>才可以使用。</p> 
+<p class="btn">
+<a href="http://i.renren.com/pay/pre?wc=370000" class="join-vip" target="_blank"></a>
+<a href="http://www.renren.com/scores/myscore" class="lookup-class" target="_blank"></a>或
+</p> 
+</div> 
+</div>
+<div class="gossip-footer clearfix">
+<div id="miniEditorAction" class="m-editor-action clearfix"></div>     
+<label for="whisper"><input id="whisper" type="checkbox" value="1" tabindex="3" name="only_to_me" />悄悄话</label>   
+<input stats="pf_subgossip" type="submit" id="commentPostBtn" value="&nbsp;留言&nbsp;" class="disable-button" />
+</div>
+<input type="hidden" name="curpage" value="" />
+<input type="hidden" name="from" value="main" />
+<input type="hidden" name="id" value="559111297" />
+<input type="hidden" name="cc" id="leaveWordTo" value="559111297" /><input type="hidden" name="ak" value="bba30145b5fd3de93a5d5aafd9412c31" />
+<input type="hidden" name="cccc" id="gossipReplyToId"/>
+<input type="hidden" name="tsc" id="tsc" value="" />
+<input type="hidden" name="profilever" id="profilever" value="2008" />            
+<input type="hidden" name="headUrl" id="gossipHeadUrl" />
+<input type="hidden" name="largeUrl" id="gossipLargeUrl" />
+</form>
+</div>
+<script type="text/javascript">
+XN.Config.commentStage = 20;
+XN.Config.commnetSelected = 1;
+vipUser = false;jf_vip_em = false;
+</script></div>
+</div>
+<div class="gossip-list">
+<a href="javascript:;" class="show-list"/>展开留言</a>
+<a href="javascript:;" class="hide-list"/>收起留言</a>
+</div>
+<div id="comment" class="comment-holder" style="display:none;"><div class="cmt-list" id="talk"></div>					<div class="nocomments" style="display:none;"><p>清经会似乎还没有收到好友留言，<br />赶紧留个言表示一下关心吧！</p></div>
+<div class="cmt-more">
+<a stats="n2_allgossip2" href="http://gossip.renren.com/getgossiplist.do?id=559111297&amp;age=recent">查看所有留言</a>
+</div></div>
+</div>
+</div></div>
+<div class="visit-special-con"><div id="footprint-box" class="clearfix">
+<h5>最近来访 2382</h5>
+<ul><li>
+<a namecard="601536829" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=601536829"><img src="http://hdn.xnimg.cn/photos/hdn221/20130521/2245/h_head_7mpT_a7d6000002a2111a.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">Thucst23 16:42</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="345782017" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=345782017"><img src="http://hdn.xnimg.cn/photos/hdn121/20101119/1755/h_head_OOsV_30cd00004ff22f75.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">丁舒阳 16:13</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="550013041" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=550013041"><img src="http://hdn.xnimg.cn/photos/hdn321/20130914/1920/h_head_wjQm_5cfa00000679111a.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">范琪 15:34</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="297877658" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=297877658"><img src="http://hdn.xnimg.cn/photos/hdn521/20130627/1940/h_head_rgpR_410300000359111a.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">陆苇EFZ 14:39</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="546633616" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=546633616"><img src="http://hdn.xnimg.cn/photos/hdn121/20130806/0040/h_head_P6r8_dc11000002f3111a.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">贺紫薇 14:18</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="335202624" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=335202624"><img src="http://hdn.xnimg.cn/photos/hdn221/20131011/0035/h_head_LMZC_34d5000004d8113e.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">王治钧BHSFer 13:49</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="365160881" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=365160881"><img src="http://hdn.xnimg.cn/photos/hdn421/20131123/2205/h_head_EmRP_b9be000003a2113e.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">葛紫蘅 13:34</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="455390773" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=455390773"><img src="http://hdn.xnimg.cn/photos/hdn221/20120420/2055/h_head_oRD9_30240003b4bd2f76.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">钟鼎 12:54</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="541594006" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=541594006"><img src="http://hdn.xnimg.cn/photos/hdn421/20130929/1745/h_head_AzaH_ead100000403111a.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">袁月 12:16</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="361762273" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=361762273"><img src="http://hdn.xnimg.cn/photos/hdn321/20131207/1405/h_head_G92E_fc390000bcad111a.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">金周勇 11:46</span>
+<span class="tip-footer"></span>
+</span>
+</li><li>
+<a namecard="542544715" href="http://www.renren.com/profile.do?portal=homeFootprint&amp;ref=home_footprint&amp;id=542544715"><img src="http://hdn.xnimg.cn/photos/hdn121/20131005/2000/h_head_lztL_8d4900000548113e.jpg" onload="cutImg(this);"/></a>
+<span class="time-tip">
+<span class="tip-content">刘霁航 11:24</span>
+<span class="tip-footer"></span>
+</span>
+</li>	
+</ul>
+</div>
+<script type="text/javascript">
+function cutImg(img){
+if(img.width >= img.height) {
+img.width = 30 * img.width / img.height;
+img.height = 30;
+offset = (img.width - 30) * 0.5;
+img.style.left = -offset + 'px';
+} else {
+img.height = 30 * img.height / img.width;
+img.width = 30;
+offset = (img.height - 30) * 0.5;
+img.style.top = -offset + 'px';
+}
+}
+object.use('dom', function(dom) {
+dom.getElement('#footprint-box').delegate('li', 'mouseover', function(e) {
+var target = XN.event.element(e),
+li = dom.wrap(target).getParent('li');
+li.className = 'show-tip';
+});
+dom.getElement('#footprint-box').delegate('li', 'mouseout', function(e) {
+var target = XN.event.element(e),
+li = dom.wrap(target).getParent('li');
+li.className = '';
+});
+});
+</script>
+<div id="specialfriend-box" class="clearfix">
+<div class="friend-show clearfix">
+<div class="share-friend">
+<h4>
+<a onclick="showShareFriends(559111297);" href="javascript:;"><span>1</span>&nbsp;共同好友</a>
+</h4>
+<ul>
+<li><a href="http://www.renren.com/335291602/profile" namecard="335291602" target="_blank"><img width="30" height="30" src="http://hdn.xnimg.cn/photos/hdn421/20131107/2025/tiny_rXTX_473f000270d8111a.jpg"></a></li></ul>
+</div>
+<div class="has-friend">
+<h4>
+<a href="http://friend.renren.com/GetFriendList.do?id=559111297" target="_blank"><span>490</span>&nbsp;好友</a></h4>
+<ul>
+<li><a href="http://www.renren.com/271261238/profile" namecard="271261238" target="_blank"><img width="30" height="30" src="http://hdn.xnimg.cn/photos/hdn321/20131208/0920/tiny_OjG1_135f0003467d113e.jpg"></a></li>
+<li><a href="http://www.renren.com/479581499/profile" namecard="479581499" target="_blank"><img width="30" height="30" src="http://hdn.xnimg.cn/photos/hdn421/20131002/2215/tiny_3q1E_46ff00019672111a.jpg"></a></li>
+<li><a href="http://www.renren.com/554185257/profile" namecard="554185257" target="_blank"><img width="30" height="30" src="http://hdn.xnimg.cn/photos/hdn321/20130928/1615/h_tiny_rxen_bba400000242113e.jpg"></a></li>
+<li><a href="http://www.renren.com/284750646/profile" namecard="284750646" target="_blank"><img width="30" height="30" src="http://hdn.xnimg.cn/photos/hdn321/20131114/2255/tiny_P0JD_13380002ac90113e.jpg"></a></li>
+<li><a href="http://www.renren.com/333070691/profile" namecard="333070691" target="_blank"><img width="30" height="30" src="http://hdn.xnimg.cn/photos/hdn121/20130530/1210/h_tiny_TP5H_045b0000002b113e.jpg"></a></li>
+<li><a href="http://www.renren.com/553509021/profile" namecard="553509021" target="_blank"><img width="30" height="30" src="http://hdn.xnimg.cn/photos/hdn521/20131118/2245/tiny_qMK6_46f90002b837111a.jpg"></a></li>
+<li><a href="http://www.renren.com/384865753/profile" namecard="384865753" target="_blank"><img width="30" height="30" src="http://hdn.xnimg.cn/photos/hdn121/20131008/1920/h_tiny_1eZg_a33200000b1f111a.jpg"></a></li>
+<li><a href="http://www.renren.com/333241529/profile" namecard="333241529" target="_blank"><img width="30" height="30" src="http://hdn.xnimg.cn/photos/hdn121/20130328/1935/tiny_Uq1B_ec73000109f7113e.jpg"></a></li></ul>
+</div></div></div></div>
+</div>		
+<div class="born" id="born-le">
+<div class="timeline_marker" data-time="born"><span>出生</span></div>
+<div class="timeline_feed tlf_feed">
+<section class="tl-a-feed">
+<article class="content">
+<div class="content-main">
+<div class="life-event">
+<span class="avatar">
+<img src="http://a.xnimg.cn/apps/profile2/res/lifeevent/le-born.png">
+</span>
+<h3 class="event-type">呱呱坠地鸟</h3>
+<p class="event-info">2013	-8-21</p>
+</div>
+</div>
+</article>
+</section><i></i>
+</div>
+</div>	</div>
+<div id="timeline_nav"><div id="ad_box"><!-- korewa  -->
+<style type="text/css">
+.tl-xhbox { width: 100px;}
+.tl-xh-title{ font-weight: bold; line-height: 18px; margin: 10px 0; width: 100px; }
+.mzy-xh-con{ display: block; height: 170px; width: 100px; overflow: hidden; position: relative; background-image: url(http://s.xnimg.cn/n/apps/profile/modules/huodong/2013meizhiyuan/new/org.new.jpg); }</style>
+<div class="tl-xhbox">
+<p class="tl-xh-title"><a href="http://track.yx.renren.com/redirect/7561" target="_blank">美汁源 果粒奶优</a></p>
+<a href="http://track.yx.renren.com/redirect/7561" class="mzy-xh-con" target="_blank"></a>
+</div> </div></div>
+</div>
+<input type="hidden" id="showLoverPage" value="false" />
+<input type="hidden" id="showSite" value="false" />
+<input type="hidden" id="showMovie" value="true" /></div><div id="bottombar"></div>
+<div id="toolBackTo" class="back-to" style="display:none;">
+<a stats="site_footer_back_to_top" class="backtotop" href="#top">返回顶部
+<img stats="site_footer_back_to_top" src="http://a.xnimg.cn/imgpro/button/back-tip.png" class="back-tip" />
+</a>
+</div><script src="http://s.xnimg.cn/a12023/jspro/beacon.js"></script>
+<script>
+COMSCORE.beacon({ c1:2, c2:6934070, c3:"", c4:"", c5:"", c6:"", c15:"" });
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=6934070&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+<script type="text/javascript">
+function backToNormal() {
+var dialog = XN.DO.confirm({
+title : "返回旧版个人主页",
+message : '<div class="bt-normal-pop">你确定要使用旧版个人主页吗？</div>',
+width : '480',
+params : {
+showCloseButton : true
+},
+callback: function(r){
+if (r) {
+new XN.NET.xmlhttp({
+url: 'http://www.renren.com/lifeEventGuideStatus/newTimelineSwitch',
+data: 'flag=back2old',
+method: 'post',
+onSuccess: function(xmlHttp){
+var r = XN.JSON.parse(xmlHttp.responseText);
+if(r.code== '0'){
+location.reload();
+return;
+}else if(r.code== '-1') {
+XN.DO.showError(r.msg);
+}
+},
+onError: function(){
+XN.DO.showError('服务器错误，请稍后重试');
+return;
+}
+});
+}
+}
+});
+}
+</script>
+<div id="tl-guide-help" style="width:30px;z-index=2000;right:0px;" onmouseover="TLGuide.menuShow();" onmouseout="TLGuide.menuHidd();">
+<div id="tl-guide-title"></div>
+<div id="tl-guide-menu">
+<h2><a href="http://www.renren.com/timeline_waitinglist/index" target="_blank" onfocus="this.blur()">时间轴介绍</a></h1>
+<h2><a href="http://help.renren.com/helpcenter?type=1000390#http://help.renren.com/support/contomvice?pid=5" target="_blank" onfocus="this.blur()">意见反馈</a></h1></div>
+<p id="tl-help"></p>
+<div id="tl-title">新版帮助</div>
+</div></body>
+</html>
